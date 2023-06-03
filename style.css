@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*
+ font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+
+    /* FONTLAR */
+    --lexend:'Lexend Deca', sans-serif;
+    --bigshoulder:'Big Shoulders Display', cursive;
+
+    /* RENKLER */
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    /* paragraf rengi  */
+    --Transparentwhite:hsla(0, 0%, 100%, 0.75);
+
+    /* Header,Arka plan ve button rengi */
+    --verylightgray:hsl(0, 0%, 95%);
+ }
+
+ .container{
+    display: flex;
+    width: 100%;
+    margin: 100px auto;
+    justify-content: center;
+    
+    
+ }
+
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 500px;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+ }
+ .card img{
+    width: 60px;
+ }
+ .card1{
+    background-color: var(--Brightorange);
+    border-radius: 5px 0 0 5px;
+ }
+ .card2{
+    background-color: var(--Darkcyan);
+ }
+ .card3{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 5px 5px 0;
+ }
+ .card h1 {
+    font-family: var(--bigshoulder);
+    text-transform: uppercase;
+    color: var(--verylightgray);
+ }
+ .card p{
+    font-family: var(--lexend);
+    color: var(--Transparentwhite);
+    opacity: .8;
+ }
+ button{
+    background-color:var(--verylightgray);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: var(--lexend) ;
+    width: 150px;
+ }
+ .card1 button{
+    color: var(--Brightorange);
+ }
+ .card2 button{
+    color: var(--Darkcyan);
+ }
+ .card3 button{
+    color: var(--Verydarkcyan);
+ }
+ @media (max-width:400px) {
+
+    .container{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    
+ }
